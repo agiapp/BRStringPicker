@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "BRStringPicker.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -16,13 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)clickSelectBtn:(id)sender {
+    NSArray *dataArr = @[@"高中", @"中专", @"大专", @"本科", @"硕士", @"博士", @"博士后"];
+    [BRStringPicker showPickerWithTitle:@"请选择学历" dataSource:dataArr defaultSelIndex:0 resultBlock:^(NSString *selectedValue) {
+        NSLog(@"你选择的学历是：%@", selectedValue);
+        self.label.text = selectedValue;
+    }];
 }
 
 

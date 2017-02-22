@@ -13,6 +13,7 @@
 		C54A3F221E5D87E6008FF367 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54A3F201E5D87E6008FF367 /* Main.storyboard */; };
 		C54A3F241E5D87E6008FF367 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54A3F231E5D87E6008FF367 /* Assets.xcassets */; };
 		C54A3F271E5D87E6008FF367 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54A3F251E5D87E6008FF367 /* LaunchScreen.storyboard */; };
+		C54A3F301E5D8998008FF367 /* BRStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C54A3F2F1E5D8998008FF367 /* BRStringPicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C54A3F231E5D87E6008FF367 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C54A3F261E5D87E6008FF367 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C54A3F281E5D87E6008FF367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54A3F2E1E5D8998008FF367 /* BRStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringPicker.h; sourceTree = "<group>"; };
+		C54A3F2F1E5D8998008FF367 /* BRStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRStringPicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 			children = (
 				C54A3F1A1E5D87E6008FF367 /* AppDelegate.h */,
 				C54A3F1B1E5D87E6008FF367 /* AppDelegate.m */,
+				C54A3F2E1E5D8998008FF367 /* BRStringPicker.h */,
+				C54A3F2F1E5D8998008FF367 /* BRStringPicker.m */,
 				C54A3F1D1E5D87E6008FF367 /* ViewController.h */,
 				C54A3F1E1E5D87E6008FF367 /* ViewController.m */,
 				C54A3F201E5D87E6008FF367 /* Main.storyboard */,
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54A3F301E5D8998008FF367 /* BRStringPicker.m in Sources */,
 				C54A3F1F1E5D87E6008FF367 /* ViewController.m in Sources */,
 				C54A3F1C1E5D87E6008FF367 /* AppDelegate.m in Sources */,
 				C54A3F191E5D87E6008FF367 /* main.m in Sources */,
@@ -273,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BRStringPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.renbo.BRStringPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,6 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BRStringPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.renbo.BRStringPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
