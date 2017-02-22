@@ -5,5 +5,25 @@
 
 # 效果图
 
-![效果图](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1487766269844&di=2b83d3410569d8459b23706e670c7568&imgtype=0&src=http%3A%2F%2Fpic.92to.com%2Flian%2F201605%2F21%2F654d6a9e1934cd8fd82698fb7c41c9ce.gif)
+![效果图](https://github.com/borenfocus/BRStringPicker/blob/master/BRStringPicker/%E6%95%88%E6%9E%9C%E5%9B%BE.gif)
 
+
+
+# 使用说明
+
+1. 导入头文件：`import "BRStringPicker.h"`
+
+2. 直接调用`showPickerWithTitle: ...`这个类方法
+
+   ```objective-c
+   - (IBAction)clickSelectBtn:(id)sender {
+       NSArray *dataArr = @[@"高中", @"中专", @"大专", @"本科", @"硕士", @"博士", @"博士后"];
+       // 调用这个类方法
+       [BRStringPicker showPickerWithTitle:@"请选择学历" dataSource:dataArr defaultSelIndex:0 resultBlock:^(NSString *selectedValue) {
+           NSLog(@"你选择的学历是：%@", selectedValue);
+           self.label.text = selectedValue;
+       }];
+   }
+   ```
+
+   ​
