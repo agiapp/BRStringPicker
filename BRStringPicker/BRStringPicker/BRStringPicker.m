@@ -242,7 +242,7 @@ blue:((CGFloat)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
     CGRect selfFrame = self.bgView.frame;
     if (selfFrame.origin.y == SCREEN_HEIGHT - bgHeight) {
         selfFrame.origin.y += bgHeight;
-        [UIView animateWithDuration:0.3 animations:^{
+        [UIView animateWithDuration:0.2 animations:^{
             self.bgView.frame = selfFrame;
         }completion:^(BOOL finished) {
             [self removeFromSuperview];
