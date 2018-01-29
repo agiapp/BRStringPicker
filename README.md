@@ -27,3 +27,7 @@
    ```
 
    ​
+
+   更多选择器的使用请访问下面链接：
+
+   https://github.com/borenfocus/BRPickerView
