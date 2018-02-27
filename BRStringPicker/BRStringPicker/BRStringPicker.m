@@ -208,7 +208,9 @@ blue:((CGFloat)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
 /** 点击完成按钮 */
 - (void)clickDoneBtn {
     // 回调，把选择的值传出去
-    self.resultBlock(selectedValue);
+    if (self.resultBlock) {
+        self.resultBlock(selectedValue);
+    }
     [self removeSelfFromSupView];
 }
 
